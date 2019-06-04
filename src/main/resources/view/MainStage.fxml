@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="1263.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gezhiwei.file.dective.controller.MainStageController">
+   <children>
+      <TextArea fx:id="inputText" layoutX="180.0" layoutY="16.0" prefHeight="224.0" prefWidth="363.0" />
+      <TextArea fx:id="outputText" layoutX="550.0" layoutY="16.0" prefHeight="224.0" prefWidth="690.0" />
+      <Button layoutX="28.0" layoutY="116.0" mnemonicParsing="false" onAction="#selectDir" prefHeight="42.0" prefWidth="89.0" text="select dir" />
+      <Button layoutX="28.0" layoutY="240.0" mnemonicParsing="false" onAction="#fileAnlyiz" prefHeight="42.0" prefWidth="89.0" text="file anlyize" />
+      <Button layoutX="28.0" layoutY="344.0" mnemonicParsing="false" onAction="#fileAnlyiz" prefHeight="42.0" prefWidth="89.0" text="refreshTable" />
+      <Button layoutX="28.0" layoutY="451.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="89.0" text="remove" />
+      <Button layoutX="28.0" layoutY="545.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="89.0" text="move" />
+      <TableView fx:id="tView" layoutX="180.0" layoutY="357.0" prefHeight="378.0" prefWidth="1062.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="选择" />
+            <TableColumn fx:id="fileName" prefWidth="256.0" text="文件名" />
+            <TableColumn fx:id="filePath" prefWidth="228.0" text="文件路径" />
+            <TableColumn fx:id="fileMd5" prefWidth="149.0" text="MD5" />
+            <TableColumn fx:id="fileSize" prefWidth="222.0" text="文件大小" />
+        </columns>
+      </TableView>
+       <Pagination fx:id="pagination" layoutX="467.0" layoutY="751.0" prefHeight="60.0" prefWidth="349.0" />
+   </children>
+</AnchorPane>
