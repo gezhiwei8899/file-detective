@@ -73,8 +73,6 @@ public class MainStageController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-        System.out.println(resources);
     }
 
     public void selectDir(ActionEvent actionEvent) {

@@ -40,13 +40,7 @@ public class MainController extends AbstractJavaFxApplicationSupport {
     public void start(Stage stage) throws Exception {
         super.start(stage);
         stage.setOnCloseRequest(event -> {
-            System.out.println("clear Data");
-            stage.close();
-            try {
-                TimeUnit.SECONDS.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            //close event
         });
     }
 
